@@ -36,7 +36,7 @@ const Dashboard = () => {
           <div className='w-[17px] h-[16px] rounded bg-[#FFA9EC]'>
           </div>
           <div className='text-white font-semi-bold text-base'>
-            <p>People</p>
+            <Link to='/People'><p>People</p></Link>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ const Dashboard = () => {
           <div className='w-[17px] h-[16px] rounded bg-[#FDFFA9]'>
           </div>
           <div className='text-white font-semi-bold text-base'>
-            <p>Species</p>
+            <Link to='/Species'><p>Species</p></Link>
           </div>
         </div>
 

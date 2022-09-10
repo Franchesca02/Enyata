@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Table = () => {
+const Table = (props) => {
   return (
     <div className='relative top-[55px] px-6 my-2 h-[589px]'>
 <p className='text-base font-normal text-[#A4A7B7] py-8'>Films</p>
@@ -45,22 +45,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple MacBook Pro 17"
+                    
                 </th>
                 <td className="py-4 px-6">
-                    Sliver
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Laptop
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                    
                 </td>
                
             </tr>
@@ -72,22 +72,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Microsoft Surface Pro
+                    
                 </th>
                 <td className="py-4 px-6">
-                    White
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Laptop PC
+                   
                 </td>
                 <td className="py-4 px-6">
-                    No
+                  
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                   
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                   
                 </td>
                 
             </tr>
@@ -99,22 +99,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Mouse 2
+                   
                 </th>
                 <td className="py-4 px-6">
-                    Black
+                   
                 </td>
                 <td className="py-4 px-6">
-                    Accessories
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                   
                 </td>
                 <td className="py-4 px-6">
-                    No
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                  
                 </td>
                
             </tr>
@@ -126,22 +126,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple Watch
+                    
                 </th>
                 <td className="py-4 px-6">
-                    Black
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Watches
+                   
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    No
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                    
                 </td>
                
             </tr>
@@ -153,22 +153,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple iMac
+                    
                 </th>
                 <td className="py-4 px-6">
-                    Silver
+                   
                 </td>
                 <td className="py-4 px-6">
-                    PC
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                    
                 </td>
                
             </tr>
@@ -180,22 +180,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple AirPods
+                    
                 </th>
                 <td className="py-4 px-6">
-                    White
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Accessories
+                    
                 </td>
                 <td className="py-4 px-6">
-                    No
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                    
                 </td>
                
             </tr>
@@ -207,22 +207,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    iPad Pro
+                    
                 </th>
                 <td className="py-4 px-6">
-                    Gold
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Tablet
+                    
                 </td>
                 <td className="py-4 px-6">
-                    No
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                    
                 </td>
                 
             </tr>
@@ -234,22 +234,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Keyboard
+                    
                 </th>
                 <td className="py-4 px-6">
-                    Black
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Accessories
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                    
                 </td>
                
             </tr>
@@ -261,22 +261,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple TV 4K
+                
                 </th>
                 <td className="py-4 px-6">
-                    Black
+                    
                 </td>
                 <td className="py-4 px-6">
-                    TV
+                
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    No
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $179
+                    
                 </td>
                
             </tr>
@@ -288,22 +288,22 @@ const Table = () => {
                     </div>
                 </td>
                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    AirTag
+                    
                 </th>
                 <td className="py-4 px-6">
-                    Silver
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Accessories
+                    
                 </td>
                 <td className="py-4 px-6">
-                    Yes
+                    
                 </td>
                 <td className="py-4 px-6">
-                    No
+                    
                 </td>
                 <td className="py-4 px-6">
-                    $29
+                
                 </td>
                 
             </tr>
