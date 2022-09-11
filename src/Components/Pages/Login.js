@@ -4,9 +4,9 @@ import Form from "../../UI/Molecules/Form";
 
 const Login = () => {
   return (
-    <div className="flex flex-wrap h-[982px]">
-      <div className="bg-[#031434] w-[30%] h-full px-10">
-        <div className="relative top-[395px]">
+    <div className="flex flex-wrap h-[100%]">
+      <div className="bg-[#031434] w-[30%] h- px-10 flex justify-center item-center">
+        <div className="">
           <img
             src={Logo}
             alt="An icon of the star war movie"
