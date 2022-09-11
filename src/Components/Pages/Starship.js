@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import DefaultLayout from "../Templates/layout";
 import Navbar from "../../UI/Molecules/Navbar";
-import Cards from "../../UI/Organisms/Cards";
 
 const Starship = () => {
   const [people, setPeople] = useState([]);

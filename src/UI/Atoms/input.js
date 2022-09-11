@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Input = () => {
   const [email, setEmail] = useState("");
+  // eslint-disable-next-line
   const [password, setPassword] = useState("");
   const [disable, setDisable] = useState("");
   const history = useNavigate();
@@ -14,6 +15,7 @@ const Input = () => {
   };
 
   const handlePasswordChange = (event) => {
+    // eslint-disable-next-line
     const rex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/;
   };
 
@@ -40,7 +42,9 @@ const Input = () => {
           className="w-[335px] h-[48px] rounded bg-white border-2 border-[#0A74DC] radius-[4px] my-4 px-2 outline-0
 "
         />
-        <input
+        <input 
+         pattern="(?=.*\d)(?=.*[a-z])(?=.*[0-9]).{8,}"
+         title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
           type="password"
           onChange={handlePasswordChange}
           placeholder="Password"

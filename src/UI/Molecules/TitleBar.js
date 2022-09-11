@@ -42,8 +42,9 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
               </div>
               <div className="my-10">
                 <div
+                // eslint-disable-next-line
                   className={
-                    pathname == "/overview"
+                    pathname === "/overview"
                       ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                       : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
@@ -57,9 +58,7 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
                   </div>
                 </div>
 
-                <div
-                  className={
-                    pathname == "/starship"
+                <div className={pathname === "/starship"
                       ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                       : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
@@ -74,7 +73,7 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
 
                 <div
                   className={
-                    pathname == "/people"
+                    pathname === "/people"
                       ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                       : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
@@ -89,7 +88,7 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
 
                 <div
                   className={
-                    pathname == "/species"
+                    pathname === "/species"
                       ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                       : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }

@@ -1,11 +1,12 @@
 import TitleBar from "../../UI/Molecules/TitleBar";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/logo.png";
 
 function MainLayout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  // eslint-disable-next-line
   const [pageTitle, setPageTitle] = useState("");
   const pathname = window.location.pathname;
 
@@ -23,7 +24,7 @@ function MainLayout({ children }) {
           <div className="my-10">
             <div
               className={
-                pathname == "/overview"
+                pathname === "/overview"
                   ? "flex justify-left bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   : "flex justify-left  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
               }
@@ -39,7 +40,7 @@ function MainLayout({ children }) {
 
             <div
               className={
-                pathname == "/starship"
+                pathname === "/starship"
                   ? "flex justify-left bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   : "flex justify-left  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
               }
@@ -54,7 +55,7 @@ function MainLayout({ children }) {
 
             <div
               className={
-                pathname == "/people"
+                pathname === "/people"
                   ? "flex justify-left  bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   : "flex justify-left items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
               }
@@ -69,7 +70,7 @@ function MainLayout({ children }) {
 
             <div
               className={
-                pathname == "/species"
+                pathname === "/species"
                   ? "flex justify-left bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   : "flex justify-left items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
               }
