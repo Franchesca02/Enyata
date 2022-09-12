@@ -19,11 +19,11 @@ const Input = () => {
     const rex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/;
   };
 
-  const disableButton = () => {
-    if (password === false) {
-      setDisable(disable);
-    }
-  };
+  // const disableButton = () => {
+  //   if (password === false) {
+  //     setDisable(disable);
+  //   }
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -54,7 +54,7 @@ const Input = () => {
 "
         />
         <button
-          onClick={disableButton}
+          // onClick={disableButton}
           className="w-[335px] h-[48px] rounded bg-[#0A74DC] text-white text-sm border-2 border-[#0A74DC] radius-[4px] my-4 px-2 outline-0
 "
         >

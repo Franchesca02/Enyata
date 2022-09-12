@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import DefaultLayout from "../Templates/layout";
 import Navbar from "../../UI/Molecules/Navbar";
+import { useNavigate } from "react-router-dom";
 
 const Species = () => {
   const [people, setPeople] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const history = useNavigate();
   const getData = () => {
     setLoading(true);
     return axios.get("https://swapi.dev/api/species/").then((response) => {
@@ -19,6 +20,10 @@ const Species = () => {
     getData();
     // eslint-disable-next-line
   }, []);
+
+  const viewItem = (item) => {
+    history("/specieitem");
+  };
   return (
     <DefaultLayout>
       <Navbar />
@@ -68,7 +73,7 @@ const Species = () => {
               <tbody>
                 {people &&
                   people.map((item) => (
-                    <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <tr onClick={() => viewItem(item)} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <td className="p-4 w-4">
                         <div className="flex items-center">
                           <input

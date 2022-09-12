@@ -12,7 +12,7 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
         <h1 className="font-[500] text-xl capitalize">{pageTitle}</h1>
         <div
           onClick={() => setMenuOpen(true)}
-          className="text-red-500 text-2xl flex md:hidden"
+          className="text-black text-2xl flex md:hidden"
         >
           <FaBars />
         </div>
@@ -32,7 +32,6 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
               className="fixed top-0 left-0 w-[272px] bg-[#031434] h-screen"
               onClick={(e) => e.stopPropagation()}
             >
-              XX
               <div className=" py-6 mt-6">
                 <img
                   src={Logo}
@@ -42,14 +41,13 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
               </div>
               <div className="my-10">
                 <div
-                // eslint-disable-next-line
                   className={
                     pathname === "/overview"
-                      ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
-                      : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      ? "flex justify-left bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      : "flex justify-left  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
                 >
-                  <div className="w-[17px] h-[16px] rounded bg-[#A9C1FF]"></div>
+                  <div className="w-[17px] h-[16px] mx-[2rem] rounded bg-[#A9C1FF]"></div>
 
                   <div className="text-white font-semi-bold text-base">
                     <Link to="/overview">
@@ -58,12 +56,14 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
                   </div>
                 </div>
 
-                <div className={pathname === "/starship"
-                      ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
-                      : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                <div
+                  className={
+                    pathname === "/starship"
+                      ? "flex justify-left bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      : "flex justify-left  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
                 >
-                  <div className="w-[17px] h-[16px] rounded bg-[#A9C1FF]"></div>
+                  <div className="w-[17px] h-[16px]  mx-[2rem]  rounded bg-[#A9C1FF]"></div>
                   <div className="text-white font-semi-bold text-base">
                     <Link to="/starship">
                       <p>Starships</p>
@@ -74,11 +74,11 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
                 <div
                   className={
                     pathname === "/people"
-                      ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
-                      : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      ? "flex justify-left  bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      : "flex justify-left items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
                 >
-                  <div className="w-[17px] h-[16px] rounded bg-[#FFA9EC]"></div>
+                  <div className="w-[17px] h-[16px] rounded  mx-[2rem]  bg-[#FFA9EC]"></div>
                   <div className="text-white font-semi-bold text-base">
                     <Link to="/people">
                       <p>People</p>
@@ -89,11 +89,11 @@ const TitleBar = ({ pageTitle, menuOpen, setMenuOpen }) => {
                 <div
                   className={
                     pathname === "/species"
-                      ? "flex justify-around bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
-                      : "flex justify-around  items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      ? "flex justify-left bg-[#0A74DC] items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
+                      : "flex justify-left items-center  py-[1rem] w-[90%] mx-auto rounded my-2"
                   }
                 >
-                  <div className="w-[17px] h-[16px] rounded bg-[#FDFFA9]"></div>
+                  <div className="w-[17px] h-[16px] rounded  mx-[2rem]  bg-[#FDFFA9]"></div>
                   <div className="text-white font-semi-bold text-base">
                     <Link to="/species">
                       <p>Species</p>
