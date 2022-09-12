@@ -19,7 +19,7 @@ const Starship = () => {
     getData();
     // eslint-disable-next-line
   }, []);
-
+// eslint-disable-next-line
   const viewItem = (item) => {
     history("/starshipitem");
   };
