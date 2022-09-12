@@ -3,7 +3,7 @@ import DefaultLayout from "../Templates/layout";
 import Navbar from "../../UI/Molecules/Navbar";
 import Cover from '../../Assets/cover.png'
 
-const Overview = () => {
+const OverviewItem = () => {
   return (
     
     <DefaultLayout>
@@ -23,4 +23,4 @@ const Overview = () => {
   );
 };
 
-export default Overview;
+export default OverviewItem;
