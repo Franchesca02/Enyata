@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import DefaultLayout from "../Templates/layout";
 import Navbar from "../../UI/Molecules/Navbar";
 import Star from '../../Assets/star.png'
 
 const StarshipItem = () => {
-  const [people, setPeople] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const getData = () => {
-    setLoading(true);
-    return axios.get("https://swapi.dev/api/films/").then((response) => {
-      setPeople(response?.data?.results);
-      setLoading(false);
-    });
-  };
-
-  useEffect(() => {
-    getData();
-    // eslint-disable-next-line
-  }, []);
   return (
     
     <DefaultLayout>
