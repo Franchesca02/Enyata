@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 const Input = () => {
   const [email, setEmail] = useState("");
   // eslint-disable-next-line
-  const [password, setPassword] = useState("");
-  const [disable, setDisable] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [disable, setDisable] = useState("");
   const history = useNavigate();
 
   //   const initialStateValue = "[ A-Za-z0-9]";
